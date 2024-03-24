@@ -1,0 +1,15 @@
+C:\Users\User\source\repos\client\obj\Debug\client.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\client\obj\Debug\client.Properties.Resources.resources
+C:\Users\User\source\repos\client\obj\Debug\client.csproj.GenerateResource.cache
+C:\Users\User\source\repos\client\obj\Debug\client.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\client\bin\Debug\client.exe.config
+C:\Users\User\source\repos\client\bin\Debug\client.exe
+C:\Users\User\source\repos\client\bin\Debug\client.pdb
+C:\Users\User\source\repos\client\obj\Debug\client.exe
+C:\Users\User\source\repos\client\obj\Debug\client.pdb
+C:\Users\User\source\repos\client\bin\Debug\lab4.exe
+C:\Users\User\source\repos\client\bin\Debug\CookComputing.XmlRpcV2.dll
+C:\Users\User\source\repos\client\bin\Debug\lab4.pdb
+C:\Users\User\source\repos\client\bin\Debug\lab4.exe.config
+C:\Users\User\source\repos\client\obj\Debug\client.csproj.CopyComplete
+C:\Users\User\source\repos\client\obj\Debug\client.Form1.resources
