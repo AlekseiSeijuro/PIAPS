@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\lab2_server\bin\Debug\lab2_server.exe.config
+C:\Users\User\source\repos\lab2_server\bin\Debug\lab2_server.exe
+C:\Users\User\source\repos\lab2_server\bin\Debug\lab2_server.pdb
+C:\Users\User\source\repos\lab2_server\obj\Debug\lab2_server.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\lab2_server\obj\Debug\lab2_server.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\lab2_server\obj\Debug\lab2_server.exe
+C:\Users\User\source\repos\lab2_server\obj\Debug\lab2_server.pdb
