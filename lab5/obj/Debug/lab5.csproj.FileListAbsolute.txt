@@ -1,0 +1,13 @@
+C:\Users\User\source\repos\lab5\bin\Debug\lab5.exe.config
+C:\Users\User\source\repos\lab5\bin\Debug\lab5.exe
+C:\Users\User\source\repos\lab5\bin\Debug\lab5.pdb
+C:\Users\User\source\repos\lab5\obj\Debug\lab5.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\lab5\obj\Debug\lab5.Form1.resources
+C:\Users\User\source\repos\lab5\obj\Debug\lab5.Properties.Resources.resources
+C:\Users\User\source\repos\lab5\obj\Debug\lab5.csproj.GenerateResource.cache
+C:\Users\User\source\repos\lab5\obj\Debug\lab5.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\lab5\obj\Debug\lab5.exe
+C:\Users\User\source\repos\lab5\obj\Debug\lab5.pdb
+C:\Users\User\source\repos\lab5\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\source\repos\lab5\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\source\repos\lab5\obj\Debug\lab5.csproj.CopyComplete
