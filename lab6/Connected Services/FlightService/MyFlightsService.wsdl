@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="getFlights">
+        <s:complexType />
+      </s:element>
+      <s:element name="getFlightsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getFlightsResult" type="tns:ArrayOfFlight" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfFlight">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Flight" nillable="true" type="tns:Flight" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Flight">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="from" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="to" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="durationMinutes" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="startTime" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getPlacesOn">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getPlacesOnResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getPlacesOnResult" type="tns:ArrayOfPlace" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPlace">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Place" nillable="true" type="tns:Place" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Place">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="FlightId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="placeNumber" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="price" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="buyTicketOn">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buyTicketOnResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="buyTicketOnResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getFlightsSoapIn">
+    <wsdl:part name="parameters" element="tns:getFlights" />
+  </wsdl:message>
+  <wsdl:message name="getFlightsSoapOut">
+    <wsdl:part name="parameters" element="tns:getFlightsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getPlacesOnSoapIn">
+    <wsdl:part name="parameters" element="tns:getPlacesOn" />
+  </wsdl:message>
+  <wsdl:message name="getPlacesOnSoapOut">
+    <wsdl:part name="parameters" element="tns:getPlacesOnResponse" />
+  </wsdl:message>
+  <wsdl:message name="buyTicketOnSoapIn">
+    <wsdl:part name="parameters" element="tns:buyTicketOn" />
+  </wsdl:message>
+  <wsdl:message name="buyTicketOnSoapOut">
+    <wsdl:part name="parameters" element="tns:buyTicketOnResponse" />
+  </wsdl:message>
+  <wsdl:portType name="MyFlightsServiceSoap">
+    <wsdl:operation name="getFlights">
+      <wsdl:input message="tns:getFlightsSoapIn" />
+      <wsdl:output message="tns:getFlightsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getPlacesOn">
+      <wsdl:input message="tns:getPlacesOnSoapIn" />
+      <wsdl:output message="tns:getPlacesOnSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="buyTicketOn">
+      <wsdl:input message="tns:buyTicketOnSoapIn" />
+      <wsdl:output message="tns:buyTicketOnSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MyFlightsServiceSoap" type="tns:MyFlightsServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getFlights">
+      <soap:operation soapAction="http://tempuri.org/getFlights" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPlacesOn">
+      <soap:operation soapAction="http://tempuri.org/getPlacesOn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buyTicketOn">
+      <soap:operation soapAction="http://tempuri.org/buyTicketOn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MyFlightsServiceSoap12" type="tns:MyFlightsServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getFlights">
+      <soap12:operation soapAction="http://tempuri.org/getFlights" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPlacesOn">
+      <soap12:operation soapAction="http://tempuri.org/getPlacesOn" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buyTicketOn">
+      <soap12:operation soapAction="http://tempuri.org/buyTicketOn" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MyFlightsService">
+    <wsdl:port name="MyFlightsServiceSoap" binding="tns:MyFlightsServiceSoap">
+      <soap:address location="https://localhost:44393/MyFlightsService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MyFlightsServiceSoap12" binding="tns:MyFlightsServiceSoap12">
+      <soap12:address location="https://localhost:44393/MyFlightsService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
