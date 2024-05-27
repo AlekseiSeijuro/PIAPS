@@ -1,0 +1,14 @@
+C:\Users\User\source\repos\lab8client\bin\Debug\lab8client.exe.config
+C:\Users\User\source\repos\lab8client\bin\Debug\lab8client.exe
+C:\Users\User\source\repos\lab8client\bin\Debug\lab8client.pdb
+C:\Users\User\source\repos\lab8client\obj\Debug\lab8client.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\lab8client\obj\Debug\lab8client.Properties.Resources.resources
+C:\Users\User\source\repos\lab8client\obj\Debug\lab8client.csproj.GenerateResource.cache
+C:\Users\User\source\repos\lab8client\obj\Debug\lab8client.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\lab8client\obj\Debug\lab8client.exe
+C:\Users\User\source\repos\lab8client\obj\Debug\lab8client.pdb
+C:\Users\User\source\repos\lab8client\bin\Debug\MyCom.dll
+C:\Users\User\source\repos\lab8client\bin\Debug\MyCom.pdb
+C:\Users\User\source\repos\lab8client\obj\Debug\lab8client.Form1.resources
+C:\Users\User\source\repos\lab8client\obj\Debug\lab8client.csproj.CopyComplete
+C:\Users\User\source\repos\lab8client\bin\Debug\MyCom.dll.config

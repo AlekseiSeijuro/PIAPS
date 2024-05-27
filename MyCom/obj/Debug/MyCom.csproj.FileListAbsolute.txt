@@ -1,0 +1,8 @@
+C:\Users\User\source\repos\MyCom\bin\Debug\MyCom.dll
+C:\Users\User\source\repos\MyCom\bin\Debug\MyCom.pdb
+C:\Users\User\source\repos\MyCom\bin\Debug\MyCom.tlb
+C:\Users\User\source\repos\MyCom\obj\Debug\MyCom.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\MyCom\obj\Debug\MyCom.dll
+C:\Users\User\source\repos\MyCom\obj\Debug\MyCom.pdb
+C:\Users\User\source\repos\MyCom\obj\Debug\MyCom.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\MyCom\bin\Debug\MyCom.dll.config
